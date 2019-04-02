@@ -5,6 +5,3 @@ app = Flask(__name__)
 def hello():
     return "Hello DEMO!"
 
-@app.route("/show")
-def hello():
-    return "<body bg="red">Hello DEMO!"
