@@ -30,7 +30,7 @@ Parameter overdracht middels de get methode
 @app.route("/sql")
 def sqldemo():
     woord = request.args.get('woord')
-    if len(woord)<1 or woord==None:
+    if woord==None:
         woord = "zinc"
 
     verbinding = mysql.connector.connect(host="ensembldb.ensembl.org",
