@@ -1,8 +1,19 @@
+"""
+(c)HAN University of Appliec Science/Martijn van der Bruggen
+Voorbeeld van een web applicatie
+Een eerste aanzet
+Creatie d.d. 1 april 2019
+"""
+
 from flask import Flask
 from flask import render_template, request
 import mysql.connector
 
 app = Flask(__name__)
+
+"""
+Default functie om een HTML pagina te renderen
+"""
 
 
 @app.route("/")
@@ -10,19 +21,30 @@ def hello():
     return render_template('index.html')
 
 
+"""
+Mogelijkheid om te zoeken naar een woord in de ensembl database
+Parameter overdracht middels de get methode
+"""
+
+
 @app.route("/sql")
-def piep():
-    woord = "zinc"
+def sqldemo():
+    woord = request.args.get('woord')
+
     verbinding = mysql.connector.connect(host="ensembldb.ensembl.org",
                                          user="anonymous",
                                          db="homo_sapiens_core_95_38")
     cursor = verbinding.cursor()
     cursor.execute("select * from gene where description like '%{}%' limit 10".format(woord))
     regel = ""
-    tekst = ""
+    tekst = """<form method="get">
+    <input type="text" name="woord" value="zinc">
+    <input type="submit" value="Submit">
+    </form><hr>"""
     while regel != None:
         if len(regel) > 9:
-            tekst += str(regel[9]) + "<br>"
+            tekst += str(regel[9]).replace(woord, "" + woord + "") + "<br>"
+
         regel = cursor.fetchone()
 
     cursor.close()
@@ -31,12 +53,29 @@ def piep():
     return tekst
 
 
+"""
+Mogelijkheid om te zoeken in de studenten database
+Parameter overdracht met de post method
+"""
+
+
 @app.route("/piep")
 def piepapp():
     hostname = "hannl-hlo-bioinformatica-mysqlsrv.mysql.database.azure.com"
-    woord = ""
+    woord = request.form.get('woord')
     tekst = ""
-    wachtwoord = request.args.get('ww')
+    wachtwoord = request.form.get('ww')
+    if woord == None:
+        woord = ""
+    if wachtwoord == None:
+        wachtwoord = ""
+    tekst = """<form method="post">
+             Gebruiker : <input type="text" name="gebruiker"></input><br>
+             Wachtwoord: <input type="password" name="ww" value={}></input><br><hr>
+             Zoekwoord : <input type="text" name="woord" value="">
+             <input type="submit" value="Submit"
+             </form><hr>""".format(wachtwoord)
+
     query = "select voornaam, " \
             " bericht, " \
             " if(datum!=curdate(),datum,'vandaag ') datum," \
@@ -47,18 +86,20 @@ def piepapp():
             " where bericht like '%{}%'" \
             " order by datumtijd desc" \
             " limit 100 ".format(woord)
+    try:
+        conn = mysql.connector.connect(host=hostname,
+                                       user="dummy@" + hostname,
+                                       passwd=wachtwoord)
+        cursor = conn.cursor()
+        cursor.execute("use dummy")
+        cursor.execute(query)
 
-    conn = mysql.connector.connect(host=hostname,
-                                   user="dummy@" + hostname,
-                                   passwd=wachtwoord)
-    cursor = conn.cursor()
-    cursor.execute("use dummy")
-    cursor.execute(query)
-
-    for bericht in cursor:
-        tekst += bericht[0]+"<br>"
-        tekst += str(bericht[2]) + ' ' + bericht[3]+"<br>"
-        tekst += bericht[1]+"<br>"
-    cursor.close()
-    conn.close()
+        for bericht in cursor:
+            tekst += "<b>" + bericht[0] + "</b>"
+            tekst += "<i>" + str(bericht[2]) + ' ' + bericht[3] + "</i><br>"
+            tekst += bericht[1] + "<br>"
+        cursor.close()
+        conn.close()
+    except:
+        tekst += "Er gaat iets mis met de database connectie"
     return tekst
