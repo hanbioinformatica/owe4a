@@ -8,6 +8,7 @@ Creatie d.d. 1 april 2019
 from flask import Flask
 from flask import render_template, request
 import mysql.connector
+from Bio.Seq import Seq
 
 app = Flask(__name__)
 
@@ -105,3 +106,7 @@ def piepapp():
     except:
         tekst += "Er gaat iets mis met de database connectie"
     return tekst
+
+@app.route("/bio")
+def convert():
+    pass
