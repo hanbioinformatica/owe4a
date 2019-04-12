@@ -26,8 +26,6 @@ def hello():
 Mogelijkheid om te zoeken naar een woord in de ensembl database
 Parameter overdracht middels de get methode
 """
-
-
 @app.route("/sql")
 def sqldemo():
     woord = request.args.get('woord')
@@ -59,9 +57,10 @@ def sqldemo():
 """
 Mogelijkheid om te zoeken in de studenten database
 Parameter overdracht met de post method
+Parameters worden dus niet (direct) zichtbaar overgedragen
+maar natuurlijk zijn ze wel te achterhalen omdat het verzoek
+via een onversleutelde http connectie verloopt
 """
-
-
 @app.route("/piep")
 def piepapp():
     hostname = "hannl-hlo-bioinformatica-mysqlsrv.mysql.database.azure.com"
@@ -109,4 +108,15 @@ def piepapp():
 
 @app.route("/bio")
 def convert():
-    pass
+    tekst = """<form method="get">DNA sequentie:
+        <input type="text" name="dna">
+        <input type="submit" value="Submit">
+        </form><hr>Eiwit sequentie:"""
+    dna = request.args.get('dna')
+
+    if dna == None:
+        dna = ""
+    dnaseq = Seq(dna)
+    eiwit=dnaseq.translate()
+    print(eiwit)
+    return tekst+str(eiwit)
