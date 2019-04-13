@@ -1,5 +1,5 @@
 """
-(c)HAN University of Appliec Science/Martijn van der Bruggen
+(c)HAN University of Applied Science/Martijn van der Bruggen
 Voorbeeld van een web applicatie
 Een eerste aanzet
 Creatie d.d. 1 april 2019
