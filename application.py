@@ -24,35 +24,29 @@ def hello():
 
 """
 Mogelijkheid om te zoeken naar een woord in de ensembl database
-Parameter overdracht middels de get methode
+Parameteroverdracht middels de get methode (default)
 """
-
-
 @app.route("/sql")
 def sqldemo():
-    woord = request.form.get('woord')
-    if woord == None:
-        woord = "zinc"
-
+    woord = request.args.get('woord')
+    if woord == None: woord = "koe"
     verbinding = mysql.connector.connect(host="ensembldb.ensembl.org",
                                          user="anonymous",
                                          db="homo_sapiens_core_95_38")
     cursor = verbinding.cursor()
     cursor.execute("select * from gene where description like '%{}%' limit 10".format(woord))
     regel = ""
-    tekst = """<form method="post">
-    <input type="text" name="woord" value="zinc">
-    <input type="submit" value="Submit">
-    </form><hr>"""
+    tekst = """<form method="get">
+                <input type="text" name="woord">
+                <input type="submit" value="Submit">
+                </form>
+                <hr>"""
     while regel != None:
         if len(regel) > 9:
-            tekst += str(regel[9]).replace(woord, "" + woord + "") + "<br>"
-
+            tekst += str(regel[9]).replace(woord, "<b>" + woord + "</b>") + "<br>"
         regel = cursor.fetchone()
-
     cursor.close()
     verbinding.close()
-
     return tekst
 
 
