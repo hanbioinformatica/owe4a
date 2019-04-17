@@ -26,10 +26,12 @@ def hello():
 Mogelijkheid om te zoeken naar een woord in de ensembl database
 Parameter overdracht middels de get methode
 """
+
+
 @app.route("/sql")
 def sqldemo():
-    woord = request.args.get('woord')
-    if woord==None:
+    woord = request.form.get('woord')
+    if woord == None:
         woord = "zinc"
 
     verbinding = mysql.connector.connect(host="ensembldb.ensembl.org",
@@ -38,7 +40,7 @@ def sqldemo():
     cursor = verbinding.cursor()
     cursor.execute("select * from gene where description like '%{}%' limit 10".format(woord))
     regel = ""
-    tekst = """<form method="get">
+    tekst = """<form method="post">
     <input type="text" name="woord" value="zinc">
     <input type="submit" value="Submit">
     </form><hr>"""
@@ -61,23 +63,26 @@ Parameters worden dus niet (direct) zichtbaar overgedragen
 maar natuurlijk zijn ze wel te achterhalen omdat het verzoek
 via een onversleutelde http connectie verloopt
 """
-@app.route("/piep")
+
+
+@app.route("/piep", methods=['get', 'post'])
 def piepapp():
     hostname = "hannl-hlo-bioinformatica-mysqlsrv.mysql.database.azure.com"
     woord = request.form.get('woord')
     tekst = ""
     wachtwoord = request.form.get('ww')
+    gebruiker = request.form.get('gebruiker')
     if woord == None:
         woord = ""
     if wachtwoord == None:
         wachtwoord = ""
+    print(wachtwoord)
     tekst = """<form method="post">
              Gebruiker : <input type="text" name="gebruiker"></input><br>
              Wachtwoord: <input type="password" name="ww" value={}></input><br><hr>
              Zoekwoord : <input type="text" name="woord" value="">
-             <input type="submit" value="Submit"
+             <input type="submit" value="Submit">
              </form><hr>""".format(wachtwoord)
-
     query = "select voornaam, " \
             " bericht, " \
             " if(datum!=curdate(),datum,'vandaag ') datum," \
@@ -90,7 +95,7 @@ def piepapp():
             " limit 100 ".format(woord)
     try:
         conn = mysql.connector.connect(host=hostname,
-                                       user="dummy@" + hostname,
+                                       user=gebruiker + "@" + hostname,
                                        passwd=wachtwoord)
         cursor = conn.cursor()
         cursor.execute("use dummy")
@@ -102,9 +107,10 @@ def piepapp():
             tekst += bericht[1] + "<br>"
         cursor.close()
         conn.close()
-    except:
-        tekst += "Er gaat iets mis met de database connectie"
+    except Exception as e:
+        tekst += "Er gaat iets mis met de database connectie<br>" + str(e)
     return tekst
+
 
 @app.route("/bio")
 def convert():
@@ -117,6 +123,6 @@ def convert():
     if dna == None:
         dna = ""
     dnaseq = Seq(dna)
-    eiwit=dnaseq.translate()
+    eiwit = dnaseq.translate()
     print(eiwit)
-    return tekst+str(eiwit)
+    return tekst + str(eiwit)

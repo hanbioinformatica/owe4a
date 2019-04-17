@@ -7,6 +7,10 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="PyPiep" />
+    <orderEntry type="module" module-name="week4_advancedFlask" />
+    <orderEntry type="module" module-name="week4_advancedFlask" />
+    <orderEntry type="module" module-name="week1_basisFlask" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
