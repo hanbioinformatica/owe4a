@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a90fc54-b70f-469c-92ce-4b006c957db3" name="Default Changelist" comment="" />
+    <list default="true" id="9a90fc54-b70f-469c-92ce-4b006c957db3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +22,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week3/static/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="38">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -83,7 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.groovy" />
@@ -107,6 +117,7 @@
         <option value="$PROJECT_DIR$/week3/templates/myTemplate.html" />
         <option value="$PROJECT_DIR$/week3/app.py" />
         <option value="$PROJECT_DIR$/week3/static/demo.html" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -134,16 +145,6 @@
               <item name="owe4a" type="462c0819:PsiDirectoryNode" />
               <item name="week3" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="owe4a_flaskApps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="owe4a" type="462c0819:PsiDirectoryNode" />
-              <item name="week3" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="owe4a_flaskApps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="week1_basisFlask" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -163,11 +164,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../owe8a/week1_basisFlask" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/../owe8a/week1_basisFlask" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -336,7 +338,7 @@
       <workItem from="1556194183745" duration="3237000" />
       <workItem from="1556270049013" duration="1386000" />
       <workItem from="1556275826474" duration="1818000" />
-      <workItem from="1557230908518" duration="1648000" />
+      <workItem from="1557230908518" duration="1933000" />
     </task>
     <task id="LOCAL-00001" summary="Project aanpassing">
       <created>1554299051294</created>
@@ -370,7 +372,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59497000" />
+    <option name="totallyTimeSpent" value="59782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="27" width="1870" height="1053" extended-state="6" />
@@ -422,13 +424,6 @@
     <SUITE FILE_PATH="coverage/owe4a$Flask__application_py_.coverage" NAME="Flask (application.py) Coverage Results" MODIFIED="1555592941190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../owe8a/week1_basisFlask/templates/demoTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="14" selection-start-line="9" selection-start-column="2" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../owe8a/week1_basisFlask/cookie.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -599,8 +594,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/week3/static/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="38">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
