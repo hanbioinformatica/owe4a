@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../owe3a/PyPiepApp/.idea/PyPiep.iml" filepath="$PROJECT_DIR$/../owe3a/PyPiepApp/.idea/PyPiep.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/week1.iml" filepath="$PROJECT_DIR$/.idea/week1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/owe4a_flaskApps.iml" filepath="$PROJECT_DIR$/.idea/owe4a_flaskApps.iml" />
       <module fileurl="file://$PROJECT_DIR$/../owe8a/week1_basisFlask/.idea/week1_basisFlask.iml" filepath="$PROJECT_DIR$/../owe8a/week1_basisFlask/.idea/week1_basisFlask.iml" />
       <module fileurl="file://$PROJECT_DIR$/../owe8a/week4_advancedFlask/.idea/week4_advancedFlask.iml" filepath="$PROJECT_DIR$/../owe8a/week4_advancedFlask/.idea/week4_advancedFlask.iml" />
     </modules>
