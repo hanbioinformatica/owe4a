@@ -7,8 +7,7 @@ app = Flask(__name__)
 def hello_world():
     param_kleur = request.form.get("kleur")
     if param_kleur==None: param_kleur="green"
-    #resp = make_response(render_template('myTemplate.html',kleur = param_kleur))
-    return "Hello World!"
+    return "<marquee>Hello World!</marquee>"
 
 
 if __name__ == '__main__':

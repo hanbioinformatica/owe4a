@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9a90fc54-b70f-469c-92ce-4b006c957db3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week3/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/week3/app.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week3/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="247">
+              <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -26,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/week3/static/demo.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -34,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="266">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -53,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/week3/templates/myTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+              <caret line="15" selection-start-line="7" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -115,9 +116,9 @@
         <option value="$PROJECT_DIR$/templates/demoWeek2.py" />
         <option value="$PROJECT_DIR$/../owe8a/week1_basisFlask/Bin1_Schonthaler_Bi3a-O.py" />
         <option value="$PROJECT_DIR$/week3/templates/myTemplate.html" />
-        <option value="$PROJECT_DIR$/week3/app.py" />
         <option value="$PROJECT_DIR$/week3/static/demo.html" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/week3/app.py" />
       </list>
     </option>
   </component>
@@ -139,11 +140,6 @@
             <path>
               <item name="owe4a_flaskApps" type="b2602c69:ProjectViewProjectNode" />
               <item name="owe4a" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="owe4a_flaskApps" type="b2602c69:ProjectViewProjectNode" />
-              <item name="owe4a" type="462c0819:PsiDirectoryNode" />
-              <item name="week3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -205,14 +201,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (week3/app.py)">
+  <component name="RunManager" selected="Flask server.Flask (app.py)">
     <configuration name="css1_inline.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/owe4a/static/css1_inline.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="css2_library.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/owe4a/static/css2_library.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="js6_d3.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/owe4a/static/js6_d3.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="Bin1_Schonthaler_Bi3a-O" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -235,6 +228,21 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="owe4a_flaskApps" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="Flask (application.py)" type="Python.FlaskServer" nameIsGenerated="true">
@@ -299,11 +307,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Flask server.Flask (app.py)" />
         <item itemvalue="Flask server.Flask (week3/app.py)" />
         <item itemvalue="Python.Bin1_Schonthaler_Bi3a-O" />
         <item itemvalue="JavaScript Debug.css2_library.html" />
         <item itemvalue="JavaScript Debug.css1_inline.html" />
-        <item itemvalue="JavaScript Debug.js6_d3.html" />
       </list>
     </recent_temporary>
   </component>
@@ -338,7 +346,7 @@
       <workItem from="1556194183745" duration="3237000" />
       <workItem from="1556270049013" duration="1386000" />
       <workItem from="1556275826474" duration="1818000" />
-      <workItem from="1557230908518" duration="1933000" />
+      <workItem from="1557230908518" duration="4554000" />
     </task>
     <task id="LOCAL-00001" summary="Project aanpassing">
       <created>1554299051294</created>
@@ -372,18 +380,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59782000" />
+    <option name="totallyTimeSpent" value="62403000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="50" y="27" width="1870" height="1053" extended-state="6" />
-    <editor active="true" />
+    <frame x="50" y="27" width="1390" height="873" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20285088" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2752976" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293348" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.20065431" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24966079" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39673105" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -400,6 +407,29 @@
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2752976" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293348" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24966079" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39673105" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32919955" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.25845146" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -415,12 +445,13 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/owe4a_flaskApps$Bin1_Schonthaler_Bi3a_O.coverage" NAME="Bin1_Schonthaler_Bi3a-O Coverage Results" MODIFIED="1556275907038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../owe8a/week1_basisFlask" />
     <SUITE FILE_PATH="coverage/owe4a$Flask_____owe8a_week1_basisFlask_demoTemplate_py_.coverage" NAME="Flask (../owe8a/week1_basisFlask/demoTemplate.py) Coverage Results" MODIFIED="1555488041318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/owe4a_flaskApps$Flask__week3_app_py_.coverage" NAME="Flask (week3/app.py) Coverage Results" MODIFIED="1557239095296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/owe4a_flaskApps$Flask__week3_app_py_.coverage" NAME="Flask (week3/app.py) Coverage Results" MODIFIED="1557241813867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/owe4a$Flask_____owe8a_week4_advancedFlask_mysql1_py_.coverage" NAME="Flask (../owe8a/week4_advancedFlask/mysql1.py) Coverage Results" MODIFIED="1555491585060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/owe4a$PyPiep.coverage" NAME="PyPiep Coverage Results" MODIFIED="1555184302157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../owe3a/PyPiepApp" />
     <SUITE FILE_PATH="coverage/owe4a$Flask_____owe8a_week4_advancedFlask_cookie_py_.coverage" NAME="Flask (../owe8a/week4_advancedFlask/cookie.py) Coverage Results" MODIFIED="1555233661784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/owe4a$Flask_____owe8a_week1_basisFlask_cookie_py_.coverage" NAME="Flask (../owe8a/week1_basisFlask/cookie.py) Coverage Results" MODIFIED="1555488559124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/owe4a$Flask__uitwerking_application_py_.coverage" NAME="Flask (uitwerking/application.py) Coverage Results" MODIFIED="1556201348432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/owe4a_flaskApps$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1557242132864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/owe4a$Flask__application_py_.coverage" NAME="Flask (application.py) Coverage Results" MODIFIED="1555592941190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
@@ -575,34 +606,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week3/templates/myTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../owe8a/week1_basisFlask/demoShow.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week3/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/week3/static/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week3/templates/myTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="7" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week3/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
